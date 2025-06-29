@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Zhush It Up</title>
+    <link rel="stylesheet" href="./styles/navigation.css" />
+    <link rel="stylesheet" href="./styles/product_card_table.css" />
+    <link rel="stylesheet" href="./styles/slider.css" />
+    <link rel="stylesheet" href="./styles/product_scroller.css" />
+    <link rel="stylesheet" href="./styles/contact.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-background">
+            <nav class="navbar">
+                <div class="nav-left">
+                    <div class="logo-container">
+                        <img src="./media/Zhush Logos.png" alt="Zhush Logo" class="logo" width="150" height="100" />
+                    </div>
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./shop.html">Shop</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./login.html" class="nav-action">Login</a></li>
+                        <li><a href="./cart.html" class="nav-action">Cart</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-extra-desktop">
+                    <a href="./login.html" class="nav-action">Login</a>
+                    <a href="./cart.html" class="nav-action">Cart</a>
+                </div>
+
+                <div class="burger" id="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="landing contact-page" id="landing">
+            <h1>Let's Get In Touch</h1>
+        </section>
+    </main>
+
+
+    <div class="whiteSpace"></div>
+
+
+    <div class="contact-wrapper">
+        <div class="contact-grid">
+            <!-- Left Column: Company Info -->
+            <div class="contact-info fade-in-left">
+                <h2>Contact Info</h2>
+                <p><strong>Company Name:</strong> GreenTech Solutions</p>
+                <p><strong>Phone:</strong> +27 82 123 4567</p>
+                <p><strong>Email:</strong> info@greentech.co.za</p>
+                <p><strong>Address:</strong> 123 Eco Lane, Cape Town, SA</p>
+                <div class="button-align-wrapper">
+                    <a href="https://wa.me/27821234567" class="whatsapp-button" target="_blank">
+                        Message us on WhatsApp
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Column: Contact Form -->
+            <div class="contact-form fade-in-right">
+                <h2>Send Us a Message</h2>
+                <form id="contactForm" action="https://formspree.io/f/yourFormID" method="POST">
+                    <input type="text" name="name" placeholder="Your Name" required />
+                    <input type="email" name="email" placeholder="Your Email" required />
+                    <input type="text" name="subject" placeholder="Subject" required />
+                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+                    <div class="button-align-wrapper">
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </div>
+                </form>
+                <p id="status"></p>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="whiteSpace"></div>
+
+
+    <!-- First slider with unique class -->
+    <section class="product-slider-section">
+        <div class="product-slider-unique">
+            <!-- Image background cards -->
+            <div class="slider-card image-bg"
+                style="background-image: url('./media/144182856_3766459796775599_7421504891805296654_n.jpg'); height: 480px;">
+                <h3 class="card-title">Product One</h3>
+            </div>
+
+            <div class="slider-card color-bg" style="height: 480px;">
+                <img src="./media/344169837_560351256184838_1333247676088283294_n.jpg" alt="Product Overlay" />
+                <h3 class="card-title">Product Two</h3>
+            </div>
+
+            <div class="slider-card image-bg"
+                style="background-image: url('./media/132081641_3768927716496566_6374357848372469864_n.jpg'); height: 480px;">
+                <h3 class="card-title">Product Three</h3>
+            </div>
+
+            <div class="slider-card color-bg" style="height: 480px;">
+                <img src="./media/275360691_1618430998512215_2095395889303532265_n.jpg" alt="Product Overlay" />
+                <h3 class="card-title">Product Four</h3>
+            </div>
+
+            <div class="slider-card image-bg"
+                style="background-image: url('./media/205819970_1703893179998944_3148800746086289408_n.jpg'); height: 480px;">
+                <h3 class="card-title">Product Five</h3>
+            </div>
+
+            <div class="slider-card color-bg" style="height: 480px;">
+                <img src="./media/246025504_1794885567566371_3759233264991555387_n.jpg" alt="Product Overlay" />
+                <h3 class="card-title">Product Six</h3>
+            </div>
+
+            <div class="slider-card image-bg"
+                style="background-image: url('./media/149524776_2719548144974970_723282018927643654_n.jpg'); height: 480px;">
+                <h3 class="card-title">Product Seven</h3>
+            </div>
+
+            <div class="slider-card color-bg" style="height: 480px;">
+                <img src="./media/240900843_1754319254956336_5132469942091877240_n.jpg" alt="Product Overlay" />
+                <h3 class="card-title">Product Eight</h3>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Centre</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Your email" />
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/contact.js"></script>
+
+
+    <!-- Load first jQuery and Slick -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        // Capture first jQuery instance and release global
+        var $j1 = jQuery.noConflict(true);
+    </script>
+    <!-- Initialize first slider with $j1 -->
+    <script>
+        $j1(document).ready(function () {
+            $j1('.product-slider-unique').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+
+</html>

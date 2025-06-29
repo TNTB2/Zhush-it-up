@@ -1,0 +1,131 @@
+.scrolling-hero-section {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.scrolling-bg-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150%;
+    width: 100%;
+    background-image: url('/media/stencilMade.jpg');
+    background-size: cover;
+    background-position: center;
+    will-change: transform;
+    transition: transform 0.8s cubic-bezier(0.25, 0.1, 0.25, 1);
+    /* smoother easing */
+}
+
+.scrolling-hero-grid {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    height: 100%;
+}
+
+.scrolling-hero-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f7f7f7;
+    background-image: url('../media/res_01_White.png');
+    background-size: cover;
+    background-position: 80% 50%;
+    /* 80% from left, 50% from top */
+
+    padding: 2rem;
+    box-sizing: border-box;
+    /* include padding in width */
+    overflow: hidden;
+    width: 100%;
+    max-width: 100%;
+}
+
+
+.hero-slider-unique,
+.hero-slider {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.hero-slide {
+    background-image: url('../media/res_01_White.png');
+    background-size: contain;
+    background-position: 100% 50%;
+    /* 80% from left, 50% from top */
+    display: flex !important;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    position: relative;
+    min-height: 130px;
+    box-sizing: border-box;
+}
+
+.hero-slide:hover {
+    background-image: url('../media/res_01_Opacity40.png');
+    transition: ease-in-out 0.9s;
+}
+
+.hero-slide img {
+    width: 400px;
+    height: 500px;
+    object-fit: cover;
+    flex-shrink: 0;
+}
+
+.slide-text {
+    position: relative;
+    z-index: 2;
+    color: #008080;
+    flex: 1;
+}
+
+.slide-text h2 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.5rem;
+}
+
+.slide-text p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.scrolling-hero-right {
+    position: relative;
+    overflow: hidden;
+    background-image: url('/media/stencilMade.jpg');
+    /* your background image */
+    background-size: cover;
+    background-position: center top;
+    /* start from top */
+    background-repeat: no-repeat;
+    transition: background-position 0.2s ease-out;
+}
+
+
+/* MOBILE STYLES */
+@media (max-width: 768px) {
+    .scrolling-hero-grid {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .scrolling-hero-right {
+        height: 300px;
+    }
+
+    .hero-slide {
+        flex-direction: column;
+        text-align: center;
+        min-height: auto;
+    }
+
+    .hero-slide img {
+        width: 80px;
+        height: 80px;
+    }
+}

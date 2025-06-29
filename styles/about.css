@@ -1,0 +1,87 @@
+/* FAQ Section Container */
+.faq-section {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: rgba(0, 128, 128, 0.15);
+  border-radius: 10px;
+  padding: 2rem;
+  color: #008080;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 12px rgba(0, 128, 128, 0.2);
+  user-select: none;
+}
+
+/* FAQ Title */
+.faq-section h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+  font-size: 2rem;
+  border-bottom: 2px solid #008080;
+  padding-bottom: 0.5rem;
+}
+
+/* Each FAQ item */
+.faq-item {
+  border-top: 1px solid #0080805a;
+  padding: 1rem 0;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease;
+}
+
+.faq-item:hover {
+  background-color: #0080801a;
+}
+
+/* Question text */
+.faq-question {
+  font-weight: 600;
+  font-size: 1.1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #008080;
+}
+
+/* Plus/Minus toggle icon */
+.faq-toggle-icon {
+  font-weight: 700;
+  font-size: 1.5rem;
+  color: #008080;
+  user-select: none;
+  transition: transform 0.3s ease;
+}
+
+/* Rotate icon when active */
+.faq-item.active .faq-toggle-icon {
+  transform: rotate(45deg);
+}
+
+/* Answer text - hidden by default */
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: max-height 0.35s ease, opacity 0.35s ease;
+  padding-left: 1rem;
+  color: #006969;
+}
+
+/* Show answer when active */
+.faq-item.active .faq-answer {
+  max-height: 300px; /* enough height for most answers */
+  opacity: 1;
+  margin-top: 0.5rem;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .faq-section {
+    padding: 1rem;
+  }
+
+  .faq-question {
+    font-size: 1rem;
+  }
+}

@@ -1,0 +1,168 @@
+.page-wrapper {
+    flex: 1 0 auto;
+}
+
+.login-section {
+    padding: 2rem 1rem;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    background: rgba(255, 255, 255, 0.3);
+    padding: 5rem 0rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    color: #008080;
+    background-color: #00808025;
+    background-image: url('../media/res_01_Inverted.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+
+/* Toggle Switches (User/Company and Login/Register) */
+/* Enhanced Toggle Button Styling */
+.toggle-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    /* Stretches full width of the form */
+    max-width: 600px;
+    margin: 2rem auto;
+    overflow: hidden;
+    user-select: none;
+}
+
+.toggle-slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to right,
+            rgba(191, 238, 144, 0.0),
+            /* start fully transparent */
+            #ffffff76,
+            /* middle with 0.7 opacity */
+            rgba(191, 238, 144, 0.0)
+            /* end fully transparent */
+        );
+    z-index: 1;
+    transition: left 0.3s ease;
+}
+
+.toggle-option {
+    flex: 1;
+    text-align: center;
+    z-index: 2;
+    padding: 0.7rem 1rem;
+    font-weight: bold;
+    background: transparent;
+    color: #008080;
+    cursor: pointer;
+    transition: color 0.2s ease;
+    border-top: 2px solid #0080805a;
+    border-bottom: 2px solid #0080805a;
+}
+
+.toggle-option.active {
+    color: #00808086;
+    background: linear-gradient(to right,
+            rgba(191, 238, 144, 0.0),
+            /* start fully transparent */
+            #ffffff76,
+            /* middle with 0.7 opacity */
+            rgba(191, 238, 144, 0.0)
+            /* end fully transparent */
+        );
+}
+
+
+/* Forms */
+.account-group {
+    width: 100%;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.form input,
+.form select,
+.form button {
+    width: 100%;
+    padding: 0.75rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #008080;
+}
+
+textarea::placeholder {
+    color: #008080;
+}
+
+select {
+    color: #008080;
+}
+
+select:invalid {
+    color: #008080;
+    /* placeholder-like text colour */
+}
+
+.form button {
+    background: #008080;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form button:hover {
+    background: #006969;
+}
+
+/* Hidden Element */
+.hidden {
+    display: none;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .container {
+        padding: 1rem;
+    }
+
+    .toggle-wrapper {
+        width: 100%;
+    }
+}

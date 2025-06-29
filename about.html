@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Zhush It Up</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="./styles/navigation.css" />
+    <link rel="stylesheet" href="./styles/product_card_table.css" />
+    <link rel="stylesheet" href="./styles/slider_Info.css" />
+    <link rel="stylesheet" href="./styles/product_scroller.css" />
+    <link rel="stylesheet" href="./styles/about.css" />
+    <link rel="stylesheet" href="./styles/footer.css" />
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-background">
+            <nav class="navbar">
+                <div class="nav-left">
+                    <div class="logo-container">
+                        <img src="./media/Zhush Logos.png" alt="Zhush Logo" class="logo" width="150" height="100" />
+                    </div>
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./shop.html">Shop</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./login.html" class="nav-action">Login</a></li>
+                        <li><a href="./cart.html" class="nav-action">Cart</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-extra-desktop">
+                    <a href="./login.html" class="nav-action">Login</a>
+                    <a href="./cart.html" class="nav-action">Cart</a>
+                </div>
+
+                <div class="burger" id="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="landing about-page" id="landing">
+            <h1>About Us</h1>
+        </section>
+    </main>
+    
+    
+    <div class="whiteSpace"></div>
+
+
+    <section class="faq-section" id="faqSection">
+        <h2>Frequently Asked Questions</h2>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                What is the return policy?
+                <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                We accept returns within 30 days of purchase with a valid receipt.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                How long does shipping take?
+                <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                Standard shipping takes 5-7 business days.
+            </div>
+        </div>
+
+        <div class="faq-item">
+            <div class="faq-question">
+                Do you ship internationally?
+                <span class="faq-toggle-icon">+</span>
+            </div>
+            <div class="faq-answer">
+                Yes, we ship worldwide with additional shipping fees.
+            </div>
+        </div>
+    </section>
+
+
+    <div class="whiteSpace"></div>
+
+
+    <!-- Slick Product Slider -->
+    <section class="product-slider-section">
+        <div class="product-slider-unique">
+
+            <!-- Each slider-card with background image and hover overlay -->
+            <div class="slider-card" style="background-image: url('./media/brushes.jpg');">
+                <img class="hover-image" src="./media/res_01_Inverted.png" alt="Hover" />
+                <h3 class="card-title">Product One</h3>
+            </div>
+
+            <div class="slider-card" style="background-image: url('./media/texture.jpg');">
+                <img class="hover-image" src="./media/res_01_White.png" alt="Hover" />
+                <h3 class="card-title">Product Two</h3>
+            </div>
+
+            <div class="slider-card"
+                style="background-image: url('./media/132081641_3768927716496566_6374357848372469864_n.jpg');">
+                <img class="hover-image" src="./media/res_01_Inverted.png" alt="Hover" />
+                <h3 class="card-title">Product Three</h3>
+            </div>
+
+            <div class="slider-card"
+                style="background-image: url('./media/144182856_3766459796775599_7421504891805296654_n.jpg');">
+                <img class="hover-image" src="./media/res_01_White.png" alt="Hover" />
+                <h3 class="card-title">Product Four</h3>
+            </div>
+
+            <div class="slider-card"
+                style="background-image: url('./media/205819970_1703893179998944_3148800746086289408_n.jpg');">
+                <img class="hover-image" src="./media/res_01_Inverted.png" alt="Hover" />
+                <h3 class="card-title">Product Five</h3>
+            </div>
+
+            <div class="slider-card"
+                style="background-image: url('./media/300018978_474168134722606_6039027346871731778_n.jpg');">
+                <img class="hover-image" src="./media/res_01_White.png" alt="Hover" />
+                <h3 class="card-title">Product Six</h3>
+            </div>
+
+            <div class="slider-card"
+                style="background-image: url('./media/149524776_2719548144974970_723282018927643654_n.jpg');">
+                <img class="hover-image" src="./media/res_01_Inverted.png" alt="Hover" />
+                <h3 class="card-title">Product Seven</h3>
+            </div>
+
+            <div class="slider-card"
+                style="background-image: url('./media/345052271_276846084677368_759194424865340185_n.jpg');">
+                <img class="hover-image" src="./media/res_01_White.png" alt="Hover" />
+                <h3 class="card-title">Product Eight</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h3>Company</h3>
+                <ul>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Blog</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Support</h3>
+                <ul>
+                    <li><a href="#">Help Centre</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">FAQs</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h3>Newsletter</h3>
+                <form>
+                    <input type="email" placeholder="Your email" />
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Your Company. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/faq.js"></script>
+
+    <!-- jQuery + Slick -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Assign jQuery to a noConflict alias -->
+    <script>
+        var $j1 = jQuery.noConflict(true);
+
+        $j1(document).ready(function () {
+            $j1('.product-slider-unique').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 1, // full width per slide
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
+            });
+        });
+
+    </script>
+</body>
+
+</html>

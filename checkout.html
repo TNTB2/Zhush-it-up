@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <title>Zhush It Up</title>
+    <link rel="stylesheet" href="./styles/navigation.css" />
+    <link rel="stylesheet" href="./styles/product_card_table.css" />
+    <link rel="stylesheet" href="./styles/slider.css" />
+    <link rel="stylesheet" href="./styles/product_scroller.css" />
+
+    <!-- Slick CSS -->
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+</head>
+
+<body>
+    <header>
+        <div class="header-background">
+            <nav class="navbar">
+                <div class="nav-left">
+                    <div class="logo-container">
+                        <img src="./media/Zhush Logos.png" alt="Zhush Logo" class="logo" width="150" height="100" />
+                    </div>
+                    <ul class="nav-links" id="navLinks">
+                        <li><a href="./index.html">Home</a></li>
+                        <li><a href="./about.html">About</a></li>
+                        <li><a href="./shop.html">Shop</a></li>
+                        <li><a href="./contact.html">Contact</a></li>
+                        <li><a href="./login.html" class="nav-action">Login</a></li>
+                        <li><a href="./cart.html" class="nav-action">Cart</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-extra-desktop">
+                    <a href="./login.html" class="nav-action">Login</a>
+                    <a href="./cart.html" class="nav-action">Cart</a>
+                </div>
+
+                <div class="burger" id="burger">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="landing checkout-page" id="landing">
+            <h1>Checkout</h1>
+        </section>
+    </main>
+
+    <section class="product-section">
+        <h2>Our Products</h2>
+        <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="product-section">
+        <h2>Style Preview (Manual Product Cards)</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="./media/104119615_3211767352212608_6293460630731819995_n.jpg" alt="Sample Product" />
+                    <div class="product-overlay">
+                        <span class="price">R199</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <h3 class="product-title">Sample Product</h3>
+                <div class="star-rating">★★★★☆</div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="./media/117398753_1441159256272339_522368080405039863_n.jpg" alt="Sample Product" />
+                    <div class="product-overlay">
+                        <span class="price">R249</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <h3 class="product-title">Another Product</h3>
+                <div class="star-rating">★★★★★</div>
+            </div>
+
+            <div class="product-card">
+                <div class="product-image-container">
+                    <img src="./media/117632132_1441938219527776_2887660742738804029_n.jpg" alt="Sample Product" />
+                    <div class="product-overlay">
+                        <span class="price">R179</span>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <h3 class="product-title">Best Seller</h3>
+                <div class="star-rating">★★★☆☆</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-slider-section">
+        <div class="slider">
+            <!-- Image background cards -->
+            <div class="slider-card image-bg"
+                style="background-image: url('./media/144182856_3766459796775599_7421504891805296654_n.jpg'); height: 480px;">
+                <h3 class="card-title">Product One</h3>
+            </div>
+
+            <div class="slider-card color-bg" style="height: 480px;">
+                <img src="./media/344169837_560351256184838_1333247676088283294_n.jpg" alt="Product Overlay" />
+                <h3 class="card-title">Product Two</h3>
+            </div>
+
+            <div class="slider-card image-bg"
+                style="background-image: url('./media/132081641_3768927716496566_6374357848372469864_n.jpg'); height: 480px;">
+                <h3 class="card-title">Product Three</h3>
+            </div>
+
+            <div class="slider-card color-bg" style="height: 480px;">
+                <img src="./media/275360691_1618430998512215_2095395889303532265_n.jpg" alt="Product Overlay" />
+                <h3 class="card-title">Product Four</h3>
+            </div>
+
+            <div class="slider-card image-bg"
+                style="background-image: url('./media/205819970_1703893179998944_3148800746086289408_n.jpg'); height: 480px;">
+                <h3 class="card-title">Product Five</h3>
+            </div>
+
+            <div class="slider-card color-bg" style="height: 480px;">
+                <img src="./media/246025504_1794885567566371_3759233264991555387_n.jpg" alt="Product Overlay" />
+                <h3 class="card-title">Product Six</h3>
+            </div>
+
+            <div class="slider-card image-bg"
+                style="background-image: url('./media/149524776_2719548144974970_723282018927643654_n.jpg'); height: 480px;">
+                <h3 class="card-title">Product Seven</h3>
+            </div>
+
+            <div class="slider-card color-bg" style="height: 480px;">
+                <img src="./media/240900843_1754319254956336_5132469942091877240_n.jpg" alt="Product Overlay" />
+                <h3 class="card-title">Product Eight</h3>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-scroller-section">
+        <h2>Featured Scroller Products</h2>
+        <div class="product-scroller-grid" id="productScrollerGrid"></div>
+    </section>
+
+
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 Zhush It Up. All rights reserved.</p>
+            <ul class="social-links">
+                <li><a href="https://www.facebook.com" target="_blank" rel="noopener">Facebook</a></li>
+                <li><a href="https://www.twitter.com" target="_blank" rel="noopener">Twitter</a></li>
+                <li><a href="https://www.instagram.com" target="_blank" rel="noopener">Instagram</a></li>
+            </ul>
+        </div>
+    </footer>
+
+    <!-- Scripts at the bottom of body -->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+    <script src="./scripts/navigation.js"></script>
+    <script src="./scripts/products.js"></script>
+    <script src="./scripts/scroller.js"></script>
+
+
+    <!-- jQuery & Slick JS -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+
+    <!-- Slick initialization -->
+    <script>
+        $(document).ready(function () {
+            $('.slider').slick({
+                autoplay: true,
+                autoplaySpeed: 3000,
+                dots: true,
+                arrows: false,
+                infinite: true,
+                speed: 500,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                adaptiveHeight: true,
+                responsive: [
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+
+</html>
