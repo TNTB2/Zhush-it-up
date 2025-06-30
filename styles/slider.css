@@ -46,7 +46,7 @@
 
 /* Solid background card with overlaid image */
 .color-bg {
-  background-color: #f8f8f8;
+  background-color:  #ffffff;
   background-image: url('../media/res_01_White.png');
   position: relative;
 }

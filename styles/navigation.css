@@ -19,7 +19,7 @@ body,
 html {
   font-family: Berling_Nova_Display;
   line-height: 1.6;
-  background-color: #f9f9f9;
+  background-color: #ffffff;
 }
 
 h1,
@@ -121,7 +121,7 @@ header {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: rgb(255, 255, 255);
+  background-color: #fff7ef;
 }
 
 /* Specific page backgrounds */
