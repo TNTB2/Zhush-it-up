@@ -26,7 +26,8 @@
             <nav class="navbar">
                 <div class="nav-left">
                     <div class="logo-container">
-                        <img src="./media/Logos/Zhush_LogoTheories_main_white.png" alt="Zhush Logo" class="logo" width="150" height="100" />
+                        <img src="./media/Logos/Zhush_LogoTheories_main_white.png" alt="Zhush Logo" class="logo"
+                            width="150" height="100" />
                     </div>
                     <ul class="nav-links" id="navLinks">
                         <li><a href="./index.html">Home</a></li>
@@ -72,7 +73,7 @@
                 <p><strong>Email:</strong> info@greentech.co.za</p>
                 <p><strong>Address:</strong> 123 Eco Lane, Cape Town, SA</p>
                 <div class="button-align-wrapper">
-                    <a href="https://wa.me/27821234567" class="whatsapp-button" target="_blank">
+                    <a href="https://wa.me/31620711688" class="whatsapp-button" target="_blank">
                         Message us on WhatsApp
                     </a>
                 </div>
@@ -81,22 +82,22 @@
             <!-- Right Column: Contact Form -->
             <div class="contact-form fade-in-right">
                 <h2>Send Us a Message</h2>
-                <form id="contactForm" action="https://formspree.io/f/yourFormID" method="POST">
-                    <input type="text" name="name" placeholder="Your Name" required />
-                    <input type="email" name="email" placeholder="Your Email" required />
-                    <input type="text" name="subject" placeholder="Subject" required />
-                    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+                <form id="contactForm">
+                    <input type="text" name="name" id="name" placeholder="Your Name" required />
+                    <input type="email" name="email" id="email" placeholder="Your Email" required />
+                    <input type="text" name="subject" id="subject" placeholder="Subject" required />
+                    <textarea name="message" id="message" rows="5" placeholder="Your Message" required></textarea>
 
-                    <div class="button-align-wrapper">
-                        <button type="submit" class="submit-button">Send Message</button>
+                    <div class="button-align-wrapper" id="buttonWrapper">
+                        <button type="submit" class="submit-button" id="submitBtn">Send Message</button>
                     </div>
+
+                    <p id="status" style="display: none;">Thank you for your message! We'll be in touch soon.</p>
                 </form>
-                <p id="status"></p>
             </div>
         </div>
     </div>
 
-    
     <div class="whiteSpace"></div>
 
 
@@ -173,7 +174,7 @@
                     <li><a href="#">Instagram</a></li>
                 </ul>
             </div>
-            
+
             <div class="footer-col">
                 <h3>Newsletter</h3>
                 <form>

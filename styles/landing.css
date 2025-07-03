@@ -76,7 +76,7 @@ header {
 }
 
 .logo {
-    width: 150px;
+    width: 250px;
     height: auto;
 }
 
@@ -185,6 +185,7 @@ header {
     background-color: #00808000;
     background-image: url('../media/res_01_Inverted.png');
     background-size: cover;
+    opacity: 0;
     background-position: 50% 50%;
     background-repeat: no-repeat;
     box-shadow: -10px 4px 8px rgba(0, 0, 0, 0.1);
